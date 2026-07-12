@@ -1,4 +1,4 @@
-# latex_decomp
+# Latex flat
 
 Flatten a multi-file LaTeX project into a single `.tex` file. Every `\input`
 and `\include` is recursively inlined; the result compiles on its own.
