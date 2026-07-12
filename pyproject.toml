@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "latex-flat"
+version = "0.1.0"
+description = "Flatten a multi-file LaTeX project into a single .tex file"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Hubert Stach" }]
+keywords = ["latex", "flatten", "input", "include"]
+
+[project.scripts]
+latexflat = "flatten:main"
+
+[project.urls]
+Homepage = "https://github.com/HubertStach/latex_flat"
+
+[tool.setuptools]
+py-modules = ["flatten"]

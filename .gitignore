@@ -2,3 +2,9 @@
 CLAUDE.md
 *.tex
 *.bib
+
+# build artifacts
+dist/
+build/
+*.egg-info/
+__pycache__/
