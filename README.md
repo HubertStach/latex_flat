@@ -3,10 +3,24 @@
 Flatten a multi-file LaTeX project into a single `.tex` file. Every `\input`
 and `\include` is recursively inlined; the result compiles on its own.
 
-## Usage
+## Install
 
 ```
-python flatten.py <main.tex> [result.tex] [-b]
+pip install latex-flat
+```
+
+This installs the `latexflat` command:
+
+```
+latexflat <main.tex> [result.tex] [-b]
+```
+
+## Usage
+
+Installed command (or run the script directly with `python flatten.py ...`):
+
+```
+latexflat <main.tex> [result.tex] [-b]
 ```
 
 - `<main.tex>` — the root document (the one with `\begin{document}`).
@@ -17,7 +31,7 @@ python flatten.py <main.tex> [result.tex] [-b]
 Example:
 
 ```
-python flatten.py main.tex out.tex -b
+latexflat main.tex out.tex -b
 ```
 
 ## Behaviour
